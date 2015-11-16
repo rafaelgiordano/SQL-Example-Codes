@@ -1,0 +1,62 @@
+insert into medico values ('890765', 34, 'Luciano Bertolini');
+insert into medico values ('899909', 50, 'Chen Yao Huei');
+insert into medico values ('785909', 42, 'Marcia Carmignani');
+insert into medico values ('100192', 42, 'Debora Salvestro');
+insert into medico values ('100000', 42, 'Carlo Guimaraes');
+insert into medico values ('556643', 42, 'Joao Brancalhone');
+insert into medico values ('877763', 42, 'Jose Luiz Paccos');
+
+insert into exame values ('1000', 'Ultrasson', true, 'Trazer documento de identidade, carteirinha do convênio e pedido médico.', 'Imagem');
+insert into exame values ('8002', 'Passagem de sonda', true, NULL, 'Imagem');
+insert into exame values ('8552', 'Parasito', true, 'Menores de 18 anos devem estar acompanhados; apresentar carterinha do convênio.', 'Laboratório');
+insert into exame values ('8332', 'Sarampo', false, 'Menores de 18 anos devem estar acompanhados; apresentar carterinha do convênio.', 'Laboratório');
+insert into exame values ('1102', 'Ecodoppler', true, NULL, 'Imagem');
+insert into exame values ('2202', 'Esclerose de Varizes', true, NULL, 'Imagem');
+insert into exame values ('3302', 'Acido Urico', false, 'Menores de 18 anos deverão estar acompanhados dos resp. com documentos de id.', 'Laboratório');
+insert into exame values ('8442', 'S-Xilose', false, 'Apresentar pedido médico, carteirinha do convênio e RG.', 'Laboratório');
+insert into exame values ('8099', 'Sangue', false, 'NÃO É OBRIGATÓRIO COLETAR SANGUE SE FEBRE. INFORMAR USO DE MEDICAMENTOS NOS ÚLT. 7 dias.', 'Laboratório');
+insert into exame values ('8534', 'Tomografia', false, 'Aplicada anestesia em adultos e crianças; Trazer exames anteriores, se houver.', 'Imagem');
+insert into exame values ('1020', 'RX Radioscopia', true, NULL, 'Imagem');
+
+insert into paciente values ('10000000000', 'Alberto da Silva', 32, '98876975');
+insert into paciente values ('10000000001', 'Paulo Lebre', 32, '98876971');
+insert into paciente values ('10000000002', 'Nathalia Soares', 22, '98877775');
+insert into paciente values ('10000000003', 'Ulisses de Oliveira', 31, '95876975');
+insert into paciente values ('10000000004', 'Mario Souza', 70, '99876975');
+insert into paciente values ('10000000005', 'Maria Guedes', 89, '78876975');
+insert into paciente values ('10000000006', 'Beckyard Bottomslash', 19, '48876975');
+
+insert into orientacao values ('1000', '1', 'Jejum de 8 horas');
+insert into orientacao values ('1000', '2', 'Tomar 4 copos de água antes');
+insert into orientacao values ('8534', '1', 'Suspender med. 48 horas antes');
+insert into orientacao values ('8099', '1', 'Jejum de 8 horas');
+insert into orientacao values ('8099', '2', 'Não ingerir bebida alcoólica');
+insert into orientacao values ('8552', '1', 'Jejum de 8 horas');
+insert into orientacao values ('8552', '2', 'Não colher excesso de amostra');
+insert into orientacao values ('8552', '3', 'Não colocar amostra no congelador');
+insert into orientacao values ('8552', '4', 'Amostra não deve conter urina');
+insert into orientacao values ('1020', '1', 'Responder questionario de dieta');
+
+insert into endereco values ('30000000', 'Av. Condor', 'Metropolli', 'São Paulo', 'SP');
+insert into endereco values ('30000001', 'Rua. Tottem', 'Pq. das Bubotúberas', 'Sorocaba', 'SP');
+insert into endereco values ('30000002', 'Rua. Onze', 'Jd. das Pedras', 'Rio de Janeiro', 'RJ');
+
+insert into clinica values ('1000', 'Instituto Saude', '30000002', 58, '781112121', NULL);
+insert into clinica values ('1001', 'Clynica', '30000000', 98, '581112121', '581112191');
+insert into clinica values ('1002', 'Biomed', '30000000', 706, '181112121', '518112191');
+insert into clinica values ('1003', 'Umbrella', '30000001', 59, '581112121', NULL);
+insert into clinica values ('1004', 'PosPlan', '30000002', 204, NULL, '561112191');
+
+insert into equipamento values ('4000', 'Seringa', 'Dispositivo descartável com agulha');
+insert into equipamento values ('4001', 'Raio X', 'Aparelho com monitor de alta definiçao');
+insert into equipamento values ('4002', 'Magnetom C', 'Aperelho de exames de imagem em campo aberto');
+insert into equipamento values ('4003', 'Tomógrafo', 'Aparelho de escaneamento espiral preciso');
+insert into equipamento values ('4004', 'Tubo de coleta', 'Recipiente para colher amostras');
+
+insert into utiliza values ('8534', '4003');
+insert into utiliza values ('8099', '4000');
+insert into utiliza values ('1020', '4001');
+insert into utiliza values ('1000', '4002');
+insert into utiliza values ('1102', '4002');
+insert into utiliza values ('8552', '4004');
+insert into utiliza values ('3302', '4004');

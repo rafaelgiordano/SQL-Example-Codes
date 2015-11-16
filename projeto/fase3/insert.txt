@@ -1,0 +1,76 @@
+--Consulta (CRM, CPF, data)
+insert into consulta values ('100192','10000000000','2010-11-25');
+insert into consulta values ('100000','10000000001','2012-12-20');
+insert into consulta values ('899909','10000000002','2012-10-19');
+insert into consulta values ('899909','10000000003','2010-10-04');
+insert into consulta values ('785909','10000000004','2010-09-02');
+insert into consulta values ('785909','10000000005','2011-01-19');
+insert into consulta values ('877763','10000000006','2013-05-17');
+insert into consulta values ('556643','10000000000','2013-03-22');
+insert into consulta values ('890765','10000000001','2011-04-29');
+insert into consulta values ('556643','10000000002','2009-08-01');
+
+
+--Especialidade (CRM, espec)
+insert into especialidade values ('890765','Neurologista');
+insert into especialidade values ('899909','Pediatra');
+insert into especialidade values ('785909','Dermatologista');
+insert into especialidade values ('100192','Clínico geral');
+insert into especialidade values ('100000','Clínico geral');
+insert into especialidade values ('556643','Clínico geral');
+insert into especialidade values ('877763','Clínico geral');
+
+--Realiza (CRM, codigoExame)
+insert into realiza values ('100192','1000');
+insert into realiza values ('100000','8002');
+insert into realiza values ('899909','8552');
+insert into realiza values ('899909','8332');
+insert into realiza values ('785909','1102');
+insert into realiza values ('785909','2202');
+insert into realiza values ('877763','3302');
+insert into realiza values ('556643','8442');
+insert into realiza values ('890765','8534');
+insert into realiza values ('556643','1020');
+
+--Atua (CRM, codigoClinica)
+insert into atua values ('100192','1000');
+insert into atua values ('100192','1001');
+insert into atua values ('100000','1002');
+insert into atua values ('899909','1003');
+insert into atua values ('785909','1004');
+insert into atua values ('890765','1000');
+insert into atua values ('100000','1001');
+insert into atua values ('556643','1001');
+insert into atua values ('877763','1001');
+insert into atua values ('877763','1003');
+
+--Solicita (CRM, data, CPF, codigoExame)
+insert into solicita values ('100192','2010-11-25','10000000000','1000');
+insert into solicita values ('100000','2012-12-20','10000000001','8002');
+insert into solicita values ('899909','2012-10-19','10000000002','8552');
+insert into solicita values ('899909','2010-10-04','10000000003','8332');
+insert into solicita values ('785909','2010-09-02','10000000004','1102');
+insert into solicita values ('785909','2011-01-19','10000000005','2202');
+insert into solicita values ('877763','2013-05-17','10000000006','3302');
+insert into solicita values ('556643','2013-03-22','10000000000','8442');
+insert into solicita values ('890765','2011-04-29','10000000001','8534');
+insert into solicita values ('556643','2009-08-01','10000000002','1020');
+
+--Oferece (códigoExame, códigoClínica, ativo, agendamento, prazoEntrega)
+insert into oferece values ('1000','1000','true','true','10');
+insert into oferece values ('8002','1002','true','true','5');
+insert into oferece values ('8552','1003','false','true','7');
+insert into oferece values ('8332','1003','false','true','30');
+insert into oferece values ('1102','1004','true','false','1');
+insert into oferece values ('2202','1004','true','false','1');
+insert into oferece values ('3302','1001','false','true','7');
+insert into oferece values ('8442','1001','true','true','12');
+insert into oferece values ('8534','1000','false','true','3');
+
+--Atendimento (códigoClínica, início, término)
+insert into atendimento values ('1000','06:00:00','12:00:00');
+insert into atendimento values ('1001','08:00:00','19:00:00');
+insert into atendimento values ('1002','07:00:00','17:30:00');
+insert into atendimento values ('1003','12:00:00','19:45:00');
+insert into atendimento values ('1004','06:00:00','20:00:00');
+insert into atendimento values ('1000','14:00:00','22:00:00');
